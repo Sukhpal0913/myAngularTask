@@ -1,0 +1,196 @@
+<br>
+<br>
+
+	<aside id="fh5co-hero" class="js-fullheight">
+    <div class="flexslider js-fullheight">
+      <ul class="slides">
+         <li style="background-image: url(assets/images/img_bg_3.jpg);">
+           <div class="overlay"></div>
+           <div class="container-fluid">
+             <div class="row">
+               <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+               <div class="slider-text-inner">
+                   <h2 class="heading-title">Our Properties</h2>
+                   <p class="fh5co-lead">Designed with <i class="icon-heart3"></i> by the fine folks at <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a></p>
+               </div>
+             </div>
+             </div>
+           </div>
+         </li>
+        </ul>
+      </div>
+  </aside>
+
+<br>
+<br>
+
+<div id="fh5co-search-map">
+  <div class="search-property">
+    <div class="s-holder">
+      <h2>Search Properties</h2>
+      
+      
+      <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+      <div class="row">
+        <div class="col-xxs-12 col-xs-12">
+          <div class="input-field">
+            <label for="from">Keyword:</label>
+            <input type="text" name="key" [(ngModel)]="key" class="form-control" id="keyword" placeholder="Any"/>
+          </div>
+        </div>
+        <div class="col-xxs-12 col-xs-12">
+            <section>
+                <label for="class">Property Status:</label>
+                <select class="cs-select cs-skin-border" id="propertyStatus" name="propertyStatus" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+                  <option *ngFor= "let option of options">
+                {{option.name}}
+                </option>
+                  
+                </select>
+               
+              </section>
+
+
+        </div>
+        <div class="col-xxs-12 col-xs-12">
+        
+
+          <section>
+            <label for="class">Property Type:</label>
+            <select class="cs-select cs-skin-border" id="propertyType" name="propertyType" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+              <option *ngFor= "let option of options">
+            {{option.name}}
+            </option>
+              
+            </select>
+           
+          </section>
+
+
+
+        </div>
+        <div class="col-xxs-12 col-xs-12">
+          <div class="input-field">
+            <label for="from">Location:</label>
+            <input type="text" name="location" [(ngModel)]="location" class="form-control" id="from-place" placeholder="Any"/>
+          </div>
+        </div>
+
+
+
+        <div class="col-xxs-12 col-xs-12">
+           <section>
+            <label for="class">Price:</label>
+            <div class="wide"> 
+                <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyPrice" name="propertyPrice" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+                  <option *ngFor= "let option of options">
+                {{option.name}}
+                </option>
+                </select>    
+                <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyPrice2" name="propertyPrice2" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+                  <option *ngFor= "let option of options">
+                {{option.name}}
+                </option>  
+              </select>
+              </div>
+              </section>
+        </div>
+
+
+
+
+        <div class="col-xxs-12 col-xs-12">
+          <section>
+            <label for="class">Bedrooms:</label>
+           <div class="wide"> 
+               <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyBedroom" name="propertyBedroom" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+                 <option *ngFor= "let option of options">
+               {{option.name}}
+               </option>
+               </select>    
+               <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyBedroom2" name="propertyBedroom2" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+                 <option *ngFor= "let option of options">
+               {{option.name}}
+               </option>  
+             </select>
+             </div>
+             </section>
+       </div>
+
+
+       <div class="col-xxs-12 col-xs-12">
+        <section>
+          <label for="class">Bathrooms:</label>
+         <div class="wide"> 
+             <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyBathroom" name="propertyBathroom" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+               <option *ngFor= "let option of options">
+             {{option.name}}
+             </option>
+             </select>    
+             <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyBathroom2" name="propertyBathroom2" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+               <option *ngFor= "let option of options">
+             {{option.name}}
+             </option>  
+           </select>
+           </div>
+           </section>
+     </div>
+
+
+
+     <div class="col-xxs-12 col-xs-12">
+      <section>
+        <label for="class">Area:</label>
+       <div class="wide"> 
+           <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyArea" name="propertyArea" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+             <option *ngFor= "let option of options">
+           {{option.name}}
+           </option>
+           </select>    
+           <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyArea2" name="propertyArea2" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+             <option *ngFor= "let option of options">
+           {{option.name}}
+           </option>  
+         </select>
+         </div>
+         </section>
+   </div>
+
+
+
+
+   <div class="col-xxs-12 col-xs-12">
+    <section>
+      <label for="class">Parking spots:</label>
+     <div class="wide"> 
+         <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyPark" name="propertyPark" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+           <option *ngFor= "let option of options">
+         {{option.name}}
+         </option>
+         </select>    
+         <select class="cs-select cs-select-half cs-skin-border input-half" id="propertyPark2" name="propertyPark2" (change) = 'print($event)' [(ngModel)]="propertyStatus">
+           <option *ngFor= "let option of options">
+         {{option.name}}
+         </option>  
+       </select>
+       </div>
+       </section>
+ </div>
+
+
+
+        <div class="panel-footer">
+          <button type="submit" (click) = "print()" class="btn btn-primary">Save Data</button>
+        </div>
+      </div>
+      
+    </form>
+
+    <!-- {{userForm.value | json}} -->
+    </div>
+    
+  </div>
+  <div class="map" style="background-image: url(assets/images/cover_bg_1.jpg);">
+  </div>
+</div>
+
