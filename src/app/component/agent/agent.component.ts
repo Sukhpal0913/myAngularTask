@@ -8,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class AgentComponent implements OnInit {
 
 // public imglink = ["./assets/images/user-2.jpg"];
-  public imglinks = ["./assets/images/user-1.jpg", "./assets/images/user-2.jpg"]
+   images:any[] = ["./assets/images/user-1.jpg", "./assets/images/user-2.jpg", "./assets/images/user-3.jpg", "./assets/images/user-4.jpg", "./assets/images/user-1.jpg", 
+  "./assets/images/user-2.jpg"]
+
+  name:any[] = []
+
+
   constructor() { }
 
   ngOnInit() {
   }
+  
+
+
 
 }

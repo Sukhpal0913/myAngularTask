@@ -8,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class BlogComponent implements OnInit {
 
 
-  public assetsImages:string;
+
+  assetsImages:any[] = ["./assets/images/property-4.jpg", "./assets/images/property-2.jpg", "./assets/images/property-3.jpg", 
+   "./assets/images/property-4.jpg", "./assets/images/property-5.jpg", "./assets/images/property-6.jpg"]
+
+//   myhref:any[] = ["30% Discount to Travel", "Planning for Vacation", "Visit Tokyo Japan", "30% Discount to Travel", "Planning for Vacation",
+  
+// ]
+
+
 
   constructor() {
   
